@@ -125,10 +125,10 @@ function prepare_system() {
 echo -e "Preparing the VPS to setup. ${CYAN}$COIN_NAME${NC} ${RED}Core Features${NC}"
 #this for core
 #chmod
-cd ~/coins/engineapp/core && chmod 755 -R build-aux && chmod 755 -R depends && chmod 755 -R share && chmod 755 -R mubdi.sh
-cd ~/coins/engineapp/core && chmod 755 -R src/leveldb && chmod 755 -R src/univalue
+cd ~/coins/engineappcore/core && chmod 755 -R build-aux && chmod 755 -R depends && chmod 755 -R share && chmod 755 -R mubdi.sh
+cd ~/coins/engineappcore/core && chmod 755 -R src/leveldb && chmod 755 -R src/univalue
 #main
-cd ~/coins/engineapp/core && ./mubdi.sh && ./configure --enable-cxx --with-incompatible-bdb && make && make install
+cd ~/coins/engineappcore/core && ./mubdi.sh && ./configure --enable-cxx --with-incompatible-bdb && make && make install
 }
 
 function important_information() {

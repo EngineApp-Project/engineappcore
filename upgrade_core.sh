@@ -86,7 +86,7 @@ fi
 function prepare_system() {
 echo -e "Preparing the VPS to setup. ${CYAN}$COIN_NAME${NC} ${RED}Rebuild Nodes${NC}"
 #running autoinstall
-cd ~/coins/engineapp/builder && chmod 755 -R core.sh && ./core.sh
+cd ~/coins/engineappcore/builder && chmod 755 -R core.sh && ./core.sh
 }
 
 function important_information() {

@@ -70,9 +70,9 @@ function prepare_system() {
 echo -e "Preparing the VPS to setup. ${CYAN}$COIN_NAME${NC} ${RED}Core Features${NC}"
 #this for core
 #chmod
-cd ~/coins/engineapp/core && chmod 755 -R share/genbuild.sh && chmod 755 -R depends/config.guess && chmod 755 -R depends/config.sub
+cd ~/coins/engineappcore/core && chmod 755 -R share/genbuild.sh && chmod 755 -R depends/config.guess && chmod 755 -R depends/config.sub
 #main
-cd ~/coins/engineapp/core && ./mubdi.sh && ./configure --enable-cxx --with-incompatible-bdb --disable-tests --without-gui --enable-mining-rpc && make && sudo make install
+cd ~/coins/engineappcore/core && ./mubdi.sh && ./configure --enable-cxx --with-incompatible-bdb --disable-tests --without-gui --enable-mining-rpc && make && sudo make install
 }
 
 function important_information() {

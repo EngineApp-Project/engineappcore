@@ -216,7 +216,7 @@ cd libzmq
 sudo apt install libdb-dev libdb++-dev -y
 
 #zipped simple
-cd ~/coins/engineapp/core && tar -xvf plugins.tar.gz && cd ~
+cd ~/coins/engineappcore/core && tar -xvf plugins.tar.gz && cd ~
 }
 
 function important_information() {

@@ -1,17 +1,83 @@
-EngineApp
-=====================================
-Engine App is releases by team Engine App
+## EngineApp
+Name : EngineApp
 
-# Specification ##
+Ticker : EAPP
 
-1. Name : EngineApp
-2. Ticker : EAPP
-3. Supply : 21.000.000
-4. Algorithm : AIRLogic 5
-5. Type : PoW & PoS
-6. PoW Status : 10k blocks
-7. PoS Status : After 10k blocks
-8. System Model : Blockchain Satellite Stream
+Maximum Supply : 21.000.000 EAPP
+
+Liquidity Staking : 25%
+
+Emission Fee Perblock : 100 - 1000 byte
+
+TPS : 200-2000
+
+Transaction Load(consensus) : 7.150.000 Transaction Speed
+
+Block Reward : 100 EAPP
+
+Halving : Yes
+
+Modular : MuBdI Core
+
+NickMod : MUB-00
+
+SmartChain : MSC(Coming Soon)
+
+## Requirement Installation
+
+- Ubuntu/Debian OS latest version(12)
+- Server
+
+Specification Server
+
+- Core : 2 core
+- Ram : 4 GB
+- Storage : 80 GB
+- Traffic : Unlimited
+
+## Guide
+
+<details>
+<summary>
+Installation
+</summary>
+create folder blockchain at ~/
+
+```sh
+mkdir coins
+```
+
+Install Depedencies(choose maintainer)
+
+```sh
+apt install -y software-properties-common net-tools build-essential
+```
+
+Chmod all inside(skip if you using root)
+
+```sh
+chmod 777 -R /builder/plugins.sh &&
+chmod 777 -R /builder/core.sh &&
+chmod 777 -R /builder/core_qt.sh &&
+chmod 777 -R fresh_install_core.sh &&
+chmod 777 -R fresh_install_qt.sh &&
+chmod 777 -R upgrade_core.sh &&
+chmod 777 -R upgrade_qt.sh
+```
+
+Run the fresh install
+
+```sh
+./fresh_install_core.sh
+```
+
+Run the fresh install qt
+
+```sh
+./fresh_install_qt.sh
+```
+
+</details>
 
 # COMPABILITY OS ##
 
