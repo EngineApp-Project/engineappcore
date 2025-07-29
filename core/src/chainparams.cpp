@@ -132,8 +132,10 @@ public:
         consensus.nCoinbaseMaturity = 100;
         consensus.nFutureTimeDriftPoW = 7200;
         consensus.nFutureTimeDriftPoS = 180;
-        consensus.nMaxMoneyOut = 21000000 * COIN;
+        consensus.nMaxMoneyOut = 22000000 * COIN;
         consensus.nMNCollateralAmt = 5000 * COIN;
+        consensus.Premine = 1000000;                 //premine at block 5
+        consensus.AnchorSupply = 0;            //premine at block 1
         consensus.nProposalEstablishmentTime = 60 * 60 * 24;    // must be at least a day old to make it into a budget
         consensus.nStakeMinAge = 10 * 60;           // 10 minutes
         consensus.nStakeMinDepth = 300;             // depth set 300 prevent stake fast | 300 confirmation to active PoS
@@ -187,7 +189,10 @@ public:
         nDefaultPort = 41031;
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.emplace_back("89.117.18.176", false);     // seed-main
+        vSeeds.emplace_back("89.117.18.176", true);     // seed-main
+        vSeeds.emplace_back("94.72.124.141", true);     // seed-main
+        vSeeds.emplace_back("94.72.124.142", true);     // seed-main
+        vSeeds.emplace_back("88.153.99.194", true);     // seed-main
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 93);      // e
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 23);      // A
